@@ -1,8 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+## Writeup
 
 ---
 
@@ -11,12 +9,6 @@
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
-
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
 ---
 
 ### Reflection
@@ -27,10 +19,31 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by finding the slope and midpoints of the lines detected. I then classified them to left lane lines and right lane lines. Slopes less than 0 corresponded to the left lane and greater than 0 corresponded to the right lane. I then found coordinates x1,y1,x2,y2 for the left lane and the right lane. I did this using the center and the slope that I calculated as the average of the slopes and centers calculated earlier. 
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Example of how the pipeline works, using example - solidWhiteCurve.jpg:
 
-![grayscale][https://github.com/zu713/CarND-LaneLines-P1/blob/master/pipeline/solidWhiteCurve_grayscale.jpg]
-![gaussian_blur][https://github.com/zu713/CarND-LaneLines-P1/blob/master/pipeline/solidWhiteCurve_blur.jpg]
+Grayscale:
+
+<img src="pipeline/solidWhiteCurve_grayscale.jpg" width="480" alt="Combined Image" />
+
+Applying Gaussian Blur:
+
+<img src="pipeline/solidWhiteCurve_blur.jpg" width="480" alt="Combined Image" />
+
+Canny Edge Detection:
+
+<img src="pipeline/solidWhiteCurve_canny.jpg" width="480" alt="Combined Image" />
+
+Region of Interest:
+
+<img src="pipeline/solidWhiteCurve_region.jpg" width="480" alt="Combined Image" />
+
+Lines Drawn (Hough):
+
+<img src="pipeline/solidWhiteCurve_hough.jpg" width="480" alt="Combined Image" />
+
+After regression:
+
+<img src="pipeline/solidWhiteCurve_lines.jpg" width="480" alt="Combined Image" />
 
 
 ### 2. Identify potential shortcomings with your current pipeline
