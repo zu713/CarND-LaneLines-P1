@@ -29,8 +29,8 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![grayscale][/Users/shireenfaizi/GitHub/CarND-LaneLines-P1/pipeline/solidWhiteCurve_grayscale.jpg]
-![gaussian_blur][/Users/shireenfaizi/GitHub/CarND-LaneLines-P1/pipeline/solidWhiteCurve_blur.jpg]
+![grayscale][https://github.com/zu713/CarND-LaneLines-P1/blob/master/pipeline/solidWhiteCurve_grayscale.jpg]
+![gaussian_blur][https://github.com/zu713/CarND-LaneLines-P1/blob/master/pipeline/solidWhiteCurve_blur.jpg]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
